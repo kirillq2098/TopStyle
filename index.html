@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Образовательный сайт по монтажу окон</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-bg">
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Логотип" height="80">
+        </div>
+    </header>
+    <main class="main-home">
+        <h1>Образовательный сайт по монтажу оконных конструкций</h1>
+        <div class="home-buttons">
+            <a class="main-btn" href="tools.html">Инструменты и материалы</a>
+            <a class="main-btn" href="steps.html">Этапы монтажа</a>
+            <a class="main-btn" href="safety.html">Безопасность</a>
+            <a class="main-btn" href="alutech.html">Обучающие материалы</a>
+            <a class="main-btn" href="knowledge.html">База знаний</a>
+            <a class="main-btn" href="tips.html">Советы и ошибки</a>
+            <a class="main-btn" href="video.html">Видеоуроки</a>
+            <a class="main-btn" href="contacts.html">Контакты</a>
+        </div>
+    </main>
+    <footer>
+        <p>Топ Стиль — <span id="footer-datetime"></span></p>
+    </footer>
+    <script>
+    // Параллакс-эффект для фоновой картинки на главной
+    document.addEventListener('DOMContentLoaded', function() {
+        const body = document.body;
+        if (body.classList.contains('home-bg')) {
+            const img = new Image();
+            img.src = 'photo_5413604546745331914_y.png';
+            img.onload = function() {
+                const imgHeight = img.height;
+                const winHeight = window.innerHeight;
+                const maxOffset = Math.max(imgHeight - winHeight, 0);
+                window.addEventListener('scroll', function() {
+                    const scrollY = window.scrollY;
+                    // Ограничиваем смещение, чтобы фон не выходил за границы
+                    let offset = Math.round((scrollY / (document.body.scrollHeight - winHeight)) * maxOffset);
+                    if (offset < 0) offset = 0;
+                    if (offset > maxOffset) offset = maxOffset;
+                    body.style.backgroundPosition = `center -${offset}px`;
+                });
+            };
+        }
+    });
+
+    // Установка актуальной даты и времени в футере
+    function updateFooterDateTime() {
+        const now = new Date();
+        const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' };
+        document.getElementById('footer-datetime').textContent = now.toLocaleString('ru-RU', options);
+    }
+    updateFooterDateTime();
+    setInterval(updateFooterDateTime, 60000);
+    </script>
+</body>
+</html> 

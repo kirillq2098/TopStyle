@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #222;
+}
+header {
+    background: #218c3a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.logo img {
+    height: 60px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #b6ffb0;
+}
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(33,140,58,0.08);
+    padding: 30px 24px;
+}
+h1, h2 {
+    color: #218c3a;
+}
+section {
+    margin-bottom: 32px;
+}
+footer {
+    text-align: center;
+    padding: 18px;
+    background: #218c3a;
+    color: #fff;
+    border-radius: 0 0 12px 12px;
+    margin-top: 30px;
+}
+.main-home {
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: none;
+    padding: 0;
+    min-height: 40vh;
+}
+.home-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 350px;
+}
+.main-btn {
+    display: block;
+    background: rgba(33,140,58,0.85);
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(33,140,58,0.08);
+    transition: background 0.2s, color 0.2s, transform 0.1s, box-shadow 0.3s;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+    backdrop-filter: blur(1.5px);
+}
+.main-btn:hover {
+    background: rgba(23,107,42,0.92);
+    color: #b6ffb0;
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(33,140,58,0.18);
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 0 0;
+}
+/* Стили для чек-листа */
+.checklist-section {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-left: 4px solid #218c3a;
+}
+
+.checklist-section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #218c3a;
+    font-size: 1.3em;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 8px 0;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+}
+
+.checklist-item:hover {
+    background-color: #e8f5e8;
+}
+
+.checklist-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    accent-color: #218c3a;
+    cursor: pointer;
+}
+
+.checklist-item label {
+    cursor: pointer;
+    font-size: 1.1em;
+    line-height: 1.4;
+    flex: 1;
+    user-select: none;
+}
+
+.checklist-item input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.checklist-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: #218c3a;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #176b2a;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #545b62;
+    transform: translateY(-1px);
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-link .main-btn {
+    display: inline-block;
+    max-width: 250px;
+}
+
+
+
+/* Стили для таблицы чек-листа */
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.checklist-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 0.9em;
+}
+
+.checklist-table th {
+    background: #218c3a;
+    color: white;
+    padding: 12px 8px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #000;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.checklist-table td {
+    padding: 10px 8px;
+    border: 1px solid #000;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+.checklist-table tr:nth-child(even) {
+    background-color: white;
+}
+
+.checklist-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.checklist-table td:first-child {
+    background: white;
+    font-weight: normal;
+    color: #000;
+    min-width: 150px;
+}
+
+.checklist-table td:nth-child(2) {
+    background: white;
+    font-weight: normal;
+    color: #000;
+    min-width: 100px;
+}
+
+.checklist-table td:nth-child(3) {
+    min-width: 300px;
+}
+
+.checklist-table td:last-child {
+    text-align: center;
+    min-width: 80px;
+}
+
+.checklist-table input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #218c3a;
+    cursor: pointer;
+}
+
+.checklist-table input[type="checkbox"]:checked {
+    background-color: #218c3a;
+}
+
+/* Стили для объединенных ячеек */
+.checklist-table td[rowspan] {
+    background: white;
+    font-weight: normal;
+    color: #000;
+    vertical-align: middle;
+}
+
+.checklist-table td[rowspan].no-bottom-border {
+    border-bottom: none !important;
+}
+
+.checklist-table td[rowspan]:nth-child(2) {
+    background: white;
+    color: #000;
+}
+
+.no-top-border {
+    border-top: none !important;
+}
+
+@media (max-width: 600px) {
+    header, main {
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    main {
+        padding: 12px 6px;
+    }
+    .main-home {
+        min-height: 60vh;
+    }
+    .home-buttons {
+        max-width: 100%;
+    }
+    .main-btn {
+        font-size: 1em;
+        padding: 14px 0;
+    }
+    
+    .checklist-section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .checklist-item label {
+        font-size: 1em;
+    }
+    
+    .checklist-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    /* Адаптивные стили для таблицы */
+    .checklist-table {
+        font-size: 0.8em;
+    }
+    
+    .checklist-table th,
+    .checklist-table td {
+        padding: 8px 4px;
+    }
+    
+    .checklist-table td:first-child {
+        min-width: 100px;
+    }
+    
+    .checklist-table td:nth-child(2) {
+        min-width: 80px;
+    }
+    
+    .checklist-table td:nth-child(3) {
+        min-width: 200px;
+    }
+    
+    .checklist-table td:last-child {
+        min-width: 60px;
+    }
+    
+    .checklist-table input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+body.home-bg {
+    background: url('photo_5413604546745331914_y.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    scroll-behavior: smooth;
+}
+body.home-bg::before {
+    content: '';
+    position: fixed;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 0;
+    pointer-events: none;
+    transition: background 0.5s;
+}
+.main-home, .home-buttons, header, footer {
+    position: relative;
+    z-index: 1;
+} 

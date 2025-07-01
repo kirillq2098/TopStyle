@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обучающий материал Alutech (PDF)</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pdf-viewer-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(33,140,58,0.08);
+            padding: 24px 12px 12px 12px;
+        }
+        .pdf-viewer-container h1 {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        .pdf-link {
+            display: block;
+            text-align: center;
+            font-size: 1.15em;
+            margin: 30px 0 10px 0;
+            color: #218c3a;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .pdf-link:hover {
+            color: #176b2a;
+        }
+        @media (max-width: 700px) {
+            .pdf-iframe { height: 60vh; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Логотип" height="60"></a>
+        </div>
+    </header>
+    <main>
+        <div class="pdf-viewer-container">
+            <h1>Обучающие материалы</h1>
+            <a href="alutech обучение.pdf" class="pdf-link" target="_blank">alutech обучение.pdf</a>
+        </div>
+        <div class="back-link">
+            <a href="index.html" class="main-btn">Вернуться на главную</a>
+        </div>
+    </main>
+    <footer>
+        <p>Топ Стиль — <span id="footer-datetime"></span></p>
+    </footer>
+    <script>
+    // Установка актуальной даты и времени в футере
+    function updateFooterDateTime() {
+        const now = new Date();
+        const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' };
+        document.getElementById('footer-datetime').textContent = now.toLocaleString('ru-RU', options);
+    }
+    updateFooterDateTime();
+    setInterval(updateFooterDateTime, 60000);
+    </script>
+</body>
+</html> 

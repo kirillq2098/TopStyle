@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструменты и материалы - Чек-лист монтажника</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Логотип" height="60"></a>
+        </div>
+    </header>
+    <main>
+        <h1>Чек-лист монтажника оконных конструкций</h1>
+        
+        <section class="checklist-section">
+            
+            <div class="table-container">
+                <table class="checklist-table">
+                    <thead>
+                        <tr>
+                            <th>Точка контроля</th>
+                            <th>Вид</th>
+                            <th>Операция-действия</th>
+                            <th>Результат</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="6">Подготовка и безопасность</td>
+                            <td rowspan="2">Подготовка</td>
+                            <td>Ознакомиться, свериться с проектной документацией (проверить АТР, узлы, съемка)</td>
+                            <td><input type="checkbox" id="row1"></td>
+                        </tr>
+                        <tr>
+                            <td>Соответствие условий для выполнения работ (есть все необходимое и все соответствует)</td>
+                            <td><input type="checkbox" id="row2"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="no-bottom-border">Проверка</td>
+                            <td>Проверка СИЗ (на привязях и стропах отсутствие повреждений, торчащих ниток, на анкерных устройствах отсутствие коррозии и деформаций, каска без повреждений и с рабочим креплением)</td>
+                            <td><input type="checkbox" id="row3"></td>
+                        </tr>
+                        <tr>
+                            <td>Проверка инструмента и оснастки + электрооборудование (кабеля, переноски итп)</td>
+                            <td><input type="checkbox" id="row4"></td>
+                        </tr>
+                        <tr>
+                            <td>Проверка погодных условий (температура не ниже -15 для монтажа и запенки, температура проема не ниже -15!) При работе с люлек скорость ветра не выше 10м/с и температура воздуха не ниже -20)</td>
+                            <td><input type="checkbox" id="row5"></td>
+                        </tr>
+                        <tr>
+                            <td class="no-top-border"></td>
+                            <td>Проверить качество изделий, комплектации (конструкции не имеют повреждений- ст/п целые без видимых царапин, рамы без царапин, зазубрин, сбоев, прямые, комплектация и расходные материалы в наличии и соответствуют тех заданию)</td>
+                            <td><input type="checkbox" id="row6"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="32">Качество монтажных работ</td>
+                            <td rowspan="8">Подготовка</td>
+                            <td>Подготовка отверстий для анкерных точек (пробурить отверстия согласно РД)</td>
+                            <td><input type="checkbox" id="row7"></td>
+                        </tr>
+                        <tr>
+                            <td>Вынести геодезические метки на проем (отметить маркером заданные величины на проеме)</td>
+                            <td><input type="checkbox" id="row8"></td>
+                        </tr>
+                        <tr>
+                            <td>Подготовка конструкций к монтажу (снять створки, пакеты- установить на подкладки, рассверлить отверстия сверлом 6мм под крепеж, соблюдая расстояния и отступы согласно РД)</td>
+                            <td><input type="checkbox" id="row9"></td>
+                        </tr>
+                        <tr>
+                            <td>Установить и нанести герметизирующие материалы (псул, герметики, вилатерм, согласно РД)</td>
+                            <td><input type="checkbox" id="row10"></td>
+                        </tr>
+                        <tr>
+                            <td>Наклеить порагидроизоляционные ленты при наличии в РД (правильно расположить по типу, обеспечить адгезию к раме и проему, отсутствие разрывов)</td>
+                            <td><input type="checkbox" id="row11"></td>
+                        </tr>
+                        <tr>
+                            <td>Собрать доборные профиля и конструкции (согласно сборочным узлам и РД)</td>
+                            <td><input type="checkbox" id="row12"></td>
+                        </tr>
+                        <tr>
+                            <td>Накрутить нар. уголок (без зазоров в стыке уголков, с шагом не более 250мм)</td>
+                            <td><input type="checkbox" id="row13"></td>
+                        </tr>
+                        <tr>
+                            <td>Утеплить проем пеноплексом при наличии в РД (пеноплекс вставить вплотную к вате, запенить зазоры м/у кирпичом и пеноплексом, после полимеризации срезать и покрыть мастикой)</td>
+                            <td><input type="checkbox" id="row14"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="6">Монтаж</td>
+                            <td>Выставить конструкции в проектное положение (ширина монтажного шва не менее 25мм)</td>
+                            <td><input type="checkbox" id="row15"></td>
+                        </tr>
+                        <tr>
+                            <td>Закрепить конструкции (отклонения по вертикали, горизонтали не более 3мм)</td>
+                            <td><input type="checkbox" id="row16"></td>
+                        </tr>
+                        <tr>
+                            <td>Проверить прямолинейность горизонтальных, вертикальных участков (отсутствие горба)</td>
+                            <td><input type="checkbox" id="row17"></td>
+                        </tr>
+                        <tr>
+                            <td>Проверить заглубление крепежа (не менее 40мм, либо согласно РД), шаг (не более 500мм для цветных профилей, низ и верх створочных проемов шаг не более 350мм и не более 600мм для белых профилей)</td>
+                            <td><input type="checkbox" id="row18"></td>
+                        </tr>
+                        <tr>
+                            <td>Закладные пластины (2 точки крепления, отсутствие продуваний в зоне примыкания, отсутствие коррозии)</td>
+                            <td><input type="checkbox" id="row19"></td>
+                        </tr>
+                        <tr>
+                            <td>Накрутить стартовый профиль при наличии в РД (шаг крепления не более 200мм)</td>
+                            <td><input type="checkbox" id="row20"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">Запенка</td>
+                            <td>Обеспылить проем и раму</td>
+                            <td><input type="checkbox" id="row21"></td>
+                        </tr>
+                        <tr>
+                            <td>Увлажнить поверхности (для положительных температур)</td>
+                            <td><input type="checkbox" id="row22"></td>
+                        </tr>
+                        <tr>
+                            <td>Запенить монтажный шов в два этапа (при ширине 50мм и более, используя пенопласт)</td>
+                            <td><input type="checkbox" id="row23"></td>
+                        </tr>
+                        <tr>
+                            <td>Срезать пену не ранее чем через 3дня (отсутствие разрывов и пустот в пене)</td>
+                            <td><input type="checkbox" id="row24"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Мастика</td>
+                            <td>Нанести герметики (без разрывов и пустот)</td>
+                            <td><input type="checkbox" id="row25"></td>
+                        </tr>
+                        <tr>
+                            <td>Заход на раму должен быть ровным, не менее 3мм, толщина нанесения не менее 3мм</td>
+                            <td><input type="checkbox" id="row26"></td>
+                        </tr>
+                        <tr>
+                            <td>Штапик, рама и стартовый чистые</td>
+                            <td><input type="checkbox" id="row27"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Заполнение</td>
+                            <td>Установить стеклопакеты ориентируя их согласно РД или обозначений (улица-помещение)</td>
+                            <td><input type="checkbox" id="row28"></td>
+                        </tr>
+                        <tr>
+                            <td>Установить створки (створка не должна цеплять и заедать, при необходимости отрегулировать)</td>
+                            <td><input type="checkbox" id="row29"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">ПДК</td>
+                            <td>Накрутить стартовый профиль для ПДК, при наличии в РД (шаг крепления не более 150мм)</td>
+                            <td><input type="checkbox" id="row30"></td>
+                        </tr>
+                        <tr>
+                            <td>Установить ПДК на мет. уголки согласно РД (уклон в сторону помещения не более 1°, по горизонтали не более 0,5°)</td>
+                            <td><input type="checkbox" id="row31"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Отделка</td>
+                            <td>Установить откосы без зазоров согласно РД (разворот откоса не менее 90°)</td>
+                            <td><input type="checkbox" id="row32"></td>
+                        </tr>
+                        <tr>
+                            <td>Запенить зазор м/у откосом и проемом, установить F-профиль (ровно, без зазоров)</td>
+                            <td><input type="checkbox" id="row33"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="checklist-controls">
+                <button class="btn-secondary" onclick="resetChecklist()">Сбросить все</button>
+                <button class="btn-primary" onclick="saveProgress()">Сохранить прогресс</button>
+            </div>
+        </section>
+
+        <div class="back-link">
+            <a href="index.html" class="main-btn">Вернуться на главную</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Топ Стиль — <span id="footer-datetime"></span></p>
+    </footer>
+
+    <script>
+        // Сохранение прогресса в localStorage
+        function saveProgress() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const progress = {};
+            
+            checkboxes.forEach(checkbox => {
+                progress[checkbox.id] = checkbox.checked;
+            });
+            
+            localStorage.setItem('toolsChecklistProgress', JSON.stringify(progress));
+            alert('Прогресс сохранен!');
+        }
+
+        // Загрузка прогресса при загрузке страницы
+        window.addEventListener('load', function() {
+            const savedProgress = localStorage.getItem('toolsChecklistProgress');
+            if (savedProgress) {
+                const progress = JSON.parse(savedProgress);
+                Object.keys(progress).forEach(id => {
+                    const checkbox = document.getElementById(id);
+                    if (checkbox) {
+                        checkbox.checked = progress[id];
+                    }
+                });
+            }
+        });
+
+        // Сброс чек-листа
+        function resetChecklist() {
+            if (confirm('Вы уверены, что хотите сбросить весь прогресс?')) {
+                const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                checkboxes.forEach(checkbox => {
+                    checkbox.checked = false;
+                });
+                localStorage.removeItem('toolsChecklistProgress');
+                alert('Чек-лист сброшен!');
+            }
+        }
+
+        // Установка актуальной даты и времени в футере
+        function updateFooterDateTime() {
+            const now = new Date();
+            const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' };
+            document.getElementById('footer-datetime').textContent = now.toLocaleString('ru-RU', options);
+        }
+        updateFooterDateTime();
+        setInterval(updateFooterDateTime, 60000);
+    </script>
+</body>
+</html> 
